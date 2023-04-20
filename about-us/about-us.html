@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <!-- nav main -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark ">
+        <div class="container-fluid">
+            <a href="../index.html">
+                <div class="navbar-brand me-4 ms-2 active ">
+                    <img src="../gallery/pics/brand-1.png" alt="" style="height: 2rem; width: 2rem;" class="d-flex align-items-center">
+                </div>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navv">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" id="navv" data-bs-theme="dark">
+                <!-- nav main -->
+                <div class="offcanvas-body">
+                    <!-- navbar-link -->
+                    <ul class="navbar-nav">
+                        <button type="button" class="btn-close navbar-toggler ms-auto mb-2  " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <li class="nav-item pe-2">
+                            <em>
+                                <a href="../index.html" class="nav-link ms-1  mt-1" >
+                                    <i class="bi bi-house-fill me-1"></i>Home </a>
+                            </em>
+                        </li>
+                        <li class="nav-item pe-2">
+                            <em>
+                                <a href="" class="nav-link ms-1 mt-1">
+                                    <i class="bi bi-basket2-fill me-1"></i>Shop </a>
+                            </em>
+                        </li>
+                        <li class="nav-item pe-2">
+                            <em>
+                                <a href="" class="nav-link ms-1 mt-1">
+                                    <i class="bi bi-box-arrow-in-right me-1"></i>Login </a>
+                            </em>
+                        </li>
+                        <li class="nav-item pe-2">
+                            <em>
+                                <a href="" class="nav-link ms-1 mt-1">
+                                    <i class="bi bi-person-circle me-1"></i>Profile </a>
+                            </em>
+                        </li>
+                        <li class="nav-item pe-2">
+                            <em>
+                                <a href="" class="nav-link ms-1 mt-1" style="background-color:#198754;  color:ghostwhite;">
+                                    <i class="bi bi-info-circle-fill me-1 active" ></i>About Us </a>
+                            </em>
+                        </li>
+                    </ul>
+                    <!-- navbar-link -->
+                    <!--search button-->
+                    <form action="" class="mt-1 d-inline-flex ms-auto" style="font-family: FONT2;">
+                        <input type="search" class="form-control me-3 border-dark bg-light mt-1" placeholder="search......" style="width: 220px; height: 35px;">
+                    </form>
+                    <!--search button-->
+                    <h1>
+                        <a href="https://discord.gg/egPKHQqqjC" target="_blank" class=" discord-nav navbar-collapse d-flex text-decoration-none mt-2" id="navv">
+                            <i class="bi bi-discord"></i>
+                        </a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav main -->
+     <div class="container">
+        <div class="row">
+            <div class="col-5">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Role</th>
+                        <th scope="col">Gmail</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mohammad</td>
+                        <td>Tarahomi</td>
+                        <td>Main Developer</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Roozbeh</td>
+                        <td>Khordadian</td>
+                        <td>Co-developer</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Mohammad Reza</td>
+                        <td>Vossoughi</td>
+                        <td>Teacher</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col-7"></div>
+        </div>
+     </div>
+    
+    
+</body>
+<script src="../bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+</html>

@@ -1,0 +1,83 @@
+
+@font-face {
+    font-family:FONT1 ;
+    src: url(../Fonts/English/DancingScript/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: FONT2;
+    src: url(../topfonts/Starjedi.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    background-color:#E3E6E6;
+
+}
+
+.card{
+    margin-top: 20px;
+    font-family: FONT2;
+}
+.discord-nav:hover{
+    color:#7289da;
+    background-color: ghostwhite;
+    border: #7289da 2px solid;
+}
+.discord-nav{
+    width: 35px;
+    height: 35px;
+    border: ghostwhite 2px solid;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: #7289da ;
+    color: ghostwhite;
+    text-decoration: none;
+    font-size: 21px;
+    
+}
+a.nav-link:hover{
+    background-color:ghostwhite;
+    color: #212529;
+}
+a.nav-link{
+    color: ghostwhite;
+    font-family: FONT2;
+    border-radius: 5px ;
+}
+div.card-body{
+    color:midnightblue;
+    
+}
+div.navbar-brand{
+    font-family:FONT1 ;
+}
+
+
+.card-tite{
+    color:rgb(0, 0, 0);
+}
+@font-face {
+    font-family: 'roman';
+    src: url("../fonts/Roman\ SD.ttf");
+}
+.Title-Font{
+    font-family: 'roman';
+
+}
+.bottom{
+    z-index: 5;
+
+}
+.col-links{
+    font-size: 23px;
+    font-family:FONT1 ;
+    /* text-decoration: none; */
+}
+.black-hover:hover{
+    color: black;
+}

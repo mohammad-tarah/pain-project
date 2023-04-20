@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Main Page</title>
+        <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <!-- nav main -->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark ">
+            <div class="container-fluid">
+                <a href="index.html">
+                    <div class="navbar-brand me-4 ms-2 active ">
+                        <img src="gallery/pics/brand-1.png" alt="" style="height: 2rem; width: 2rem;" class="d-flex align-items-center">
+                    </div>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navv">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" id="navv" data-bs-theme="dark">
+                    <!-- nav main -->
+                    <div class="offcanvas-body">
+                        <!-- navbar-link -->
+                        <ul class="navbar-nav">
+                            <button type="button" class="btn-close navbar-toggler ms-auto mb-2  " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            <li class="nav-item pe-2">
+                                <em>
+                                    <a href="" class="nav-link active shadow-lg ms-1 active mt-1" style="background-color:#198754;  color:ghostwhite;">
+                                        <i class="bi bi-house-fill me-1"></i>Home </a>
+                                </em>
+                            </li>
+                            <li class="nav-item pe-2">
+                                <em>
+                                    <a href="" class="nav-link ms-1 mt-1">
+                                        <i class="bi bi-basket2-fill me-1"></i>Shop </a>
+                                </em>
+                            </li>
+                            <li class="nav-item pe-2">
+                                <em>
+                                    <a href="" class="nav-link ms-1 mt-1">
+                                        <i class="bi bi-box-arrow-in-right me-1"></i>Login </a>
+                                </em>
+                            </li>
+                            <li class="nav-item pe-2">
+                                <em>
+                                    <a href="" class="nav-link ms-1 mt-1">
+                                        <i class="bi bi-person-circle me-1"></i>Profile </a>
+                                </em>
+                            </li>
+                            <li class="nav-item pe-2">
+                                <em>
+                                    <a href="about-us/about-us.html" class="nav-link ms-1 mt-1">
+                                        <i class="bi bi-info-circle-fill me-1"></i>About Us </a>
+                                </em>
+                            </li>
+                        </ul>
+                        <!-- navbar-link -->
+                        <!--search button-->
+                        <form action="" class="mt-1 d-inline-flex ms-auto" style="font-family: FONT2;">
+                            <input type="search" class="form-control me-3 border-dark bg-light mt-1" placeholder="search......" style="width: 220px; height: 35px;">
+                        </form>
+                        <!--search button-->
+                        <h1>
+                            <a href="https://discord.gg/egPKHQqqjC" target="_blank" class=" discord-nav navbar-collapse d-flex text-decoration-none mt-2" id="navv">
+                                <i class="bi bi-discord"></i>
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- end nav main -->
+
+        <!--slide show-->
+        <div class="container-fluid">
+            <div class="row mt-4 d-flex justify-content-between">
+                <div class="col-3 ms-2">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card text-bg-dark">
+                                <img src="gallery/pics/win10.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card text-bg-dark">
+                                <img src="gallery/pics/fogy jungle.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 me-2">
+                    <div class="card text-bg-dark">
+                        <div class="carousel slide carousel-fade" id="pain" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#pain" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#pain" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#pain" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#pain" data-bs-slide-to="3"></button>
+                                <button type="button" data-bs-target="#pain" data-bs-slide-to="4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="3000">
+                                    <img src="gallery/pics/Steve-Sitting-Down.jpg" alt="" class="d-block w-100">
+                                    <div class="carousel-caption">
+                                        <h1>Main Title</h1>
+                                        <p>an slyde show whith bootstrap v5.3</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item " data-bs-interval="3000" data-bs-touch="false">
+                                    <img src="gallery/pics/fogy jungle.jpg" alt="" class="d-block w-100">
+                                    <div class="carousel-caption">
+                                        <h1>Main Title</h1>
+                                        <p>an slyde show whith bootstrap v5.3</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000" data-bs-touch="false">
+                                    <img src="gallery/pics/Steve-Sitting-Down.jpg" alt="" class="d-block w-100">
+                                    <div class="carousel-caption">
+                                        <h1>Main Title</h1>
+                                        <p>an slyde show whith bootstrap v5.3</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000" data-bs-touch="false">
+                                    <img src="gallery/pics/star sky.jpg" alt="" class="d-block w-100">
+                                    <div class="carousel-caption">
+                                        <h1>Main Title</h1>
+                                        <p>an slyde show whith bootstrap v5.3</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000" data-bs-touch="false">
+                                    <img src="gallery/pics/win10.jpg" alt="" class="d-block w-100">
+                                    <div class="carousel-caption">
+                                        <h1>Main Title</h1>
+                                        <p>an slyde show whith bootstrap v5.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end slide show-->
+
+        <!--mid section-->
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 g-4 d-flex justify-content-between mt-3">
+                <!-- <div class="card mt-4  bg-dark" style="max-width: 540px;"><div class="row g-0"><div class="col-md-4"><img src="gallery/pics/sun explotion.jpg" class="img-fluid rounded-start" alt="..."></div><div class="col-md-8 "><div class="card-body text-light"><h5 class="card-title">Card title</h5><p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p><p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p></div></div></div></div><div class="card mt-4  bg-dark " style="max-width: 540px;"><div class="row g-0"><div class="col-md-4"><img src="gallery/pics/sun explotion.jpg" class="img-fluid rounded-start" alt="..."></div><div class="col-md-8"><div class="card-body text-light"><h5 class="card-title">Card title</h5><p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p><p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p></div></div></div></div> -->
+                <div class="space" style="height: 200px;"></div>
+            </div>
+            <!-- <div class="container-fluid"><div class="row"><div class="col-12 " style="height: 200px;" ><div class="row"><div class="col-8"></div><div class="col-3"><h4>About</h4><p>Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p></div></div></div></div></div> -->
+            <div class="container">
+                <div class="row justify-content-between mt-5">
+                    <div class="col-8 text-center p-3 ">
+                        <div class="row">
+                            <div class="col-12 text-start">From the Firehose <p>January 1, 2021 by Mark This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+                                <hr>
+                                <p> This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text. </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 text-center  p-3">
+                        <div class="row">
+                            <ul class="list-unstyled col-links">
+                                <li class="mt-3 text-succes">
+                                    <a href="" class="text-decoration-none black-hover"><i class="bi bi-discord me-1"></i>discord</a>
+                                </li>
+                                <li class="mt-3 text-succes">
+                                    <a href="" class="text-decoration-none black-hover"><i class="bi bi-github me-1"></i>github</a>
+                                </li>
+                                <li class="mt-3 text-succes">
+                                    <a href="" class="text-decoration-none black-hover"><i class="bi bi-telegram me-1"></i>telegram</a>
+                                </li>
+                                <li class="mt-3 text-succes">
+                                    <a href="" class="text-decoration-none black-hover"><i class="bi bi-telephone-fill me-1"></i>contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--mid section-->
+
+        <!-- toast -->
+        <div class="toast-container position-fixed bottom-0 end-0 p-3 ">
+            <div id="liveToast" class="toast show" role="alert" aria-live="assertive" aria-atomic="true" data-bs-dismiss="toast">
+                <div class="toast-header bg-dark text-light">
+                    <img src="gallery/pics/toast.jpg" class="rounded me-2 " alt="..." style="height: 40px; width: 60px;">
+                    <em>
+                        <strong class="me-auto ">Site owner</strong>
+                    </em>
+                    <small class="ms-2">5 Seconds ago</small>
+                    <button type="button" class="btn-close  ms-auto me-1 text-light bg-light" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body bg-dark text-light"> Hi Nigga! Welcome To My Web-Page </div>
+            </div>
+        </div>
+        <!-- toast -->
+        <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+</html>
