@@ -15,7 +15,7 @@
 }
 body{
     background-color:#E3E6E6;
-
+    scroll-behavior: smooth;
 }
 
 .card{
@@ -81,3 +81,41 @@ div.navbar-brand{
 .black-hover:hover{
     color: black;
 }
+.toast{
+    box-shadow: 20px -21px 102px 0px rgba(0, 0, 0, 0.158);
+-webkit-box-shadow: 20px -21px 102px 0px rgba(0, 0, 0, 0.158);
+-moz-box-shadow: 20px -21px 102px 0px rgba(0, 0, 0, 0.158);
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ } 
+ .boo:hover{
+    transform: scale(1.5) ;
+-webkit-transform: scale(1.5) ;
+-moz-transform: scale(1.5) ;
+
+ }
+ .boo{
+    transition: transform 1s;
+ }
+ .zoom{
+    transition: transform 2s;
+ }
+ .zoom:hover{
+    transform: scale(1.10) ;
+    -webkit-transform: scale(1.10) ;
+    -moz-transform: scale(1.10) ;
+ }
