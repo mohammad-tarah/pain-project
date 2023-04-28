@@ -19,6 +19,7 @@
                         <img src="gallery/pics/brand-1.png" alt="" style="height: 2rem; width: 2rem;" class="d-flex align-items-center">
                     </div>
                 </a>
+                
                 <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navv">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -59,19 +60,86 @@
                                 </em>
                             </li>
                         </ul>
-                        <!-- navbar-link -->
-                        <!--search button-->
                         <form action="" class="mt-1 d-inline-flex ms-auto" style="font-family: FONT2;">
                             <input type="search" class="form-control me-3 border-dark bg-light mt-1" placeholder="search......" style="width: 220px; height: 35px;">
                         </form>
-                        <!--search button-->
+                        <!-- navbar-link -->
                         <h1>
-                            <a href="https://discord.gg/egPKHQqqjC" target="_blank" class=" discord-nav navbar-collapse d-flex text-decoration-none mt-2" id="navv">
+                            <a href="https://discord.gg/egPKHQqqjC" target="_blank" class=" discord-nav navbar-collapse d-flex text-decoration-none mt-2 ms-auto " id="navv">
                                 <i class="bi bi-discord"></i>
                             </a>
                         </h1>
                     </div>
                 </div>
+                
+               
+
+
+                  <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                  
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Login Page</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                  
+                        <!-- Modal body -->
+                        
+                            <form id="regForm" action="">
+
+                                <h1>Register:</h1>
+                                
+                                <!-- One "tab" for each step in the form: -->
+                                <div class="tab">Name:
+                                  <p><input placeholder="First name..." oninput="this.className = ''"></p>
+                                  <p><input placeholder="Last name..." oninput="this.className = ''"></p>
+                                </div>
+                                
+                                <div class="tab">Contact Info:
+                                  <p><input placeholder="E-mail..." oninput="this.className = ''"></p>
+                                  <p><input placeholder="Phone..." oninput="this.className = ''"></p>
+                                </div>
+                                
+                                <div class="tab">Birthday:
+                                  <p><input placeholder="dd" oninput="this.className = ''"></p>
+                                  <p><input placeholder="mm" oninput="this.className = ''"></p>
+                                  <p><input placeholder="yyyy" oninput="this.className = ''"></p>
+                                </div>
+                                
+                                <div class="tab">Login Info:
+                                  <p><input placeholder="Username..." oninput="this.className = ''"></p>
+                                  <p><input placeholder="Password..." oninput="this.className = ''"></p>
+                                </div>
+                                
+                                <div style="overflow:auto;">
+                                  <div style="float:right;">
+                                    <button type="button" id="prevBtn" onclick="nextPrev(-1)" class="bg-danger text-light p-2 rounded">Previous</button>
+                                    <button type="button" id="nextBtn" onclick="nextPrev(1)"  class="bg-success text-light p-2 rounded">Next</button>
+                                  </div>
+                                </div>
+                                
+                                <!-- Circles which indicates the steps of the form: -->
+                                <div style="text-align:center;margin-top:40px;">
+                                  <span class="step"></span>
+                                  <span class="step"></span>
+                                  <span class="step"></span>
+                                  <span class="step"></span>
+                                </div>
+                                
+                                </form> 
+                  
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                  
+                      </div>
+                    </div>
+                  </div>
+
+                
             </div>
         </nav>
         <!-- end nav main -->
@@ -207,6 +275,8 @@
                                 </table>
                             </div>
                         </div>
+                        
+            
                     </div>
                     <div class="col-12 col-md-3 text-center  p-3">
                         <div class="row">
@@ -236,16 +306,26 @@
                             </div>
                         </div>
                         
+                        
                     </div>
+                    <ul class="pagination mt-5 d-flex justify-content-end me-5 X">
+                        <li class="page-item bg-"><a class="page-link bg-dark" href="">Previous</a></li>
+                        <li class="page-item active bg-"><a class="page-link" href="">1</a></li>
+                        <li class="page-item bg-"><a class="page-link bg-dark" href="">2</a></li>
+                        <li class="page-item bg-"><a class="page-link bg-dark" href="">3</a></li>
+                        <li class="page-item bg-"><a class="page-link bg-dark" href="">Next</a></li>
+                      </ul> 
                 </div>
             </div>
         </div>
-        
+                
         <!--mid section-->
-        <div class="space" style="height: 300px;"></div>
-        <!--RATE-->
-        
 
+
+        <div class="space" style="height: 300px;"></div>
+
+
+        <!--RATE-->        
 <div class="container">
     <div class="PAIN">
         <span class="heading ">User Rating</span>
@@ -317,17 +397,22 @@
     </div>
 </div>
         <!--RATE-->
+
+        
         <nav class="navbar navbar-expand-md bg-dark navbar-dark" >
             <div class="container-fluid"> 
                     <div class="navbar-brand me-4 ms-2 active ">
                         <img src="gallery/pics/brand-1.png" alt="" style="height: 2rem; width: 2rem;" class="d-flex align-items-center">
                     </div>
+                    <button type="button" class="btn btn-dark me-auto ms-3" data-bs-toggle="modal" data-bs-target="#myModal" >
+                        <i class="bi bi-door-open-fill me-2"></i>Log IN
+                      </button>
                     
 
                         
             </div>
         </nav>
-        <a href="#" class="btn btn-success btn-outline-light  position-fixed bottom-0 end-0 me-2 mb-2" onclick="topFunction()" id="myBtn" >back to top</a>
+        <a href="#" class="btn btn-success btn-outline-light  position-fixed bottom-0 end-0 me-2 mb-4" onclick="topFunction()" id="myBtn" >back to top</a>
 
         <!-- toast -->
         <div class="toast-container position-fixed top-0 end-0 p-3 shadow-1  " id="liveToast" style="margin-top: 55px;">
@@ -345,25 +430,7 @@
         </div>
         <!-- toast -->
         <script>
-            // Get the button:
-let mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-
-function topFunction() {
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0;
-} 
+            
         </script>
         <script src="scripts/script.js"></script>
         <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
